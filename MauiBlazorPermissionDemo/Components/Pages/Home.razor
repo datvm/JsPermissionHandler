@@ -1,0 +1,52 @@
+﻿@page "/"
+
+@inject IJSRuntime Js;
+
+<h1>Maui Blazor Permission</h1>
+
+<div class="vstack gap-3">
+    <div class="hstack gap-3">
+        <button class="btn btn-primary" @onclick="OpenPermissionPanel">
+            Open Permission Panel
+        </button>
+
+        <button class="btn btn-primary" @onclick="OpenMicPermissionPanel">
+            Open Microphone Permission Panel (useful for Windows only)
+        </button>
+    </div>
+
+    <div class="hstack gap-3">
+        <label>
+            <input type="checkbox" @bind="audio" />
+            Audio
+        </label>
+
+        <label>
+            <input type="checkbox" @bind="video" />
+            Video
+        </label>
+
+        <button class="btn btn-primary" @onclick="RequestUserMediaAsync">
+            Call getUserMedia
+        </button>
+        <button class="btn btn-secondary" @onclick="StopStreamAsync">
+            Stop current stream
+        </button>
+    </div>
+
+    <div>
+        Geolocation:
+        @(geolocation ?? "None").
+
+        <button class="btn btn-primary" @onclick="RequestGeolocationAsync">
+            Request current location
+        </button>
+    </div>
+
+    @if (noPermission)
+    {
+        <div class="text-danger">Permission not granted.</div>
+    }
+
+    <video controls autoplay></video>
+</div>
