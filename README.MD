@@ -1,4 +1,4 @@
-This is a MAUI Blazor library to simplify permission management for Blazor Javascript APIs like camera, microphone (through `getUserMedia`) or `geolocation`. This is accomplished hugely thanks to [MackinnonBuck/MauiBlazorPermissionsExample](https://github.com/MackinnonBuck/JsPermissionHandlersExample). It worked for many of my projects so it's time to pack it to easily reuse it.
+This is a MAUI Blazor library to simplify permission management for Blazor Javascript APIs like camera, microphone (through `getUserMedia`) or `geolocation`. This is accomplished hugely thanks to [MackinnonBuck/MauiBlazorPermissionsExample](https://github.com/MackinnonBuck/MauiBlazorPermissionsExample). It worked for many of my projects so it's time to pack it to easily reuse it.
 
 This library is highly customizable and extensible. Most methods are `virtual` and can be overriden to fit your needs.
 
