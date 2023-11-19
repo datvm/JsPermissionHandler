@@ -1,6 +1,17 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk.Razor">
 
 	<PropertyGroup>
+		<Title>MAUI Blazor Permission</Title>
+		<Company>Luke Vo</Company>
+		<Authors>Luke Vo</Authors>
+		<Description>A MAUI Blazor library to simplify permission management for Blazor Javascript APIs like camera, microphone (getUserMedia) or geolocation</Description>
+		<Copyright>Copyright ©️ Luke Vo 2023</Copyright>
+		<PackageProjectUrl>https://github.com/datvm/MauiBlazorPermission</PackageProjectUrl>
+		<RepositoryUrl>https://github.com/datvm/MauiBlazorPermission</RepositoryUrl>
+		<PackageTags>javascript;camera;permissions;maui;blazor;maui-blazor;geolocation;getusermedia</PackageTags>
+	</PropertyGroup>
+	
+	<PropertyGroup>
 		<TargetFrameworks>net8.0-android;net8.0-ios;net8.0-maccatalyst</TargetFrameworks>
 		<TargetFrameworks Condition="$([MSBuild]::IsOSPlatform('windows'))">$(TargetFrameworks);net8.0-windows10.0.19041.0</TargetFrameworks>
 		<!-- Uncomment to also build the tizen app. You will need to install tizen by following this: https://github.com/Samsung/Tizen.NET -->
@@ -18,7 +29,16 @@
 		<SupportedOSPlatformVersion Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'windows'">10.0.17763.0</SupportedOSPlatformVersion>
 		<TargetPlatformMinVersion Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'windows'">10.0.17763.0</TargetPlatformMinVersion>
 		<SupportedOSPlatformVersion Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'tizen'">6.5</SupportedOSPlatformVersion>
+		<PackageLicenseExpression>MIT</PackageLicenseExpression>
+		<PackageReadmeFile>README.MD</PackageReadmeFile>
 	</PropertyGroup>
+	
+	<ItemGroup>
+	  <None Include="..\README.MD">
+	    <Pack>True</Pack>
+	    <PackagePath>\</PackagePath>
+	  </None>
+	</ItemGroup>
 
 	<ItemGroup>
 		<PackageReference Include="Microsoft.Maui.Controls" Version="$(MauiVersion)" />

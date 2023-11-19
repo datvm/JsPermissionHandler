@@ -185,7 +185,7 @@ partial class PermissionHandler : WebChromeClient, IActivityResultCallback
 
         if (ContextCompat.CheckSelfPermission(activity, permission) == Permission.Granted)
         {
-            callback.Invoke(true);
+            callback(true);
         }
         else if (activity.ShouldShowRequestPermissionRationale(permission) && RationalesByPermission.TryGetValue(permission, out var rationale))
         {
