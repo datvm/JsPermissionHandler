@@ -1,17 +1,17 @@
-This is a MAUI Blazor library to simplify permission management for Blazor Javascript APIs like camera, microphone (through `getUserMedia`) or `geolocation`. This is accomplished hugely thanks to [MackinnonBuck/MauiBlazorPermissionsExample](https://github.com/MackinnonBuck/MauiBlazorPermissionsExample). It worked for many of my projects so it's time to pack it to easily reuse it.
+This is a MAUI Blazor library to simplify permission management for Blazor Javascript APIs like camera, microphone (through `getUserMedia`) or `geolocation`. This is accomplished hugely thanks to [MackinnonBuck/JsPermissionHandlersExample](https://github.com/MackinnonBuck/JsPermissionHandlersExample). It worked for many of my projects so it's time to pack it to easily reuse it.
 
 This library is highly customizable and extensible. Most methods are `virtual` and can be overriden to fit your needs.
 
-See a full demo project at [project Github](https://github.com/datvm/MauiBlazorPermission/tree/master/MauiBlazorPermissionDemo).
+See a full demo project at [project Github](https://github.com/datvm/JsPermissionHandler/tree/master/JsPermissionHandlerDemo).
 
 This package does not support Tizen.
 
 # Installation
 
-Install the [NuGet package](https://www.nuget.org/packages/MauiBlazorPermissions) in your project:
+Install the [NuGet package](https://www.nuget.org/packages/JsPermissionHandlers) in your project:
 
 ```ps
-dotnet add package MauiBlazorPermissions
+dotnet add package JsPermissionHandlers
 ```
 
 # Setup Permissions
@@ -96,6 +96,6 @@ public static partial Task OpenAppPermissionPanelAsync(string? windowsScheme = n
 ```
 
 - `windowsScheme` is used on Windows only. You can specify which [Windows Settings panel](https://learn.microsoft.com/en-us/windows/uwp/launch-resume/launch-settings-app#ms-settings-uri-scheme-reference) to open. If `null`, the default is `ms-settings:appsfeatures-app` to open the settings of the current app (which would include permissions).
-![Windows Permission](https://github.com/datvm/MauiBlazorPermission/assets/6388546/b4dd4310-7791-49e9-9509-4e52c584a351)
+![Windows Permission](https://github.com/datvm/JsPermissionHandler/assets/6388546/b4dd4310-7791-49e9-9509-4e52c584a351)
 - On Android, this method opens the app settings panel. It's not possible to open the permission panel directly.
 - On iOS, this method opens the app settings panel which includes the permissions.

@@ -1,0 +1,38 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34309.116
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{9C8AF9B3-E2E9-4960-B797-104E41A00AD4}"
+	ProjectSection(SolutionItems) = preProject
+		README.MD = README.MD
+	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "JsPermissionHandler", "JsPermissionHandler\JsPermissionHandler.csproj", "{93E32D61-9282-475C-B1A2-67B778FF02D4}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "JsPermissionHandlerDemo", "JsPermissionHandlerDemo\JsPermissionHandlerDemo.csproj", "{B40BE7D8-3802-41A4-93EC-B4C28207C5AD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{93E32D61-9282-475C-B1A2-67B778FF02D4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{93E32D61-9282-475C-B1A2-67B778FF02D4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{93E32D61-9282-475C-B1A2-67B778FF02D4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{93E32D61-9282-475C-B1A2-67B778FF02D4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B40BE7D8-3802-41A4-93EC-B4C28207C5AD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B40BE7D8-3802-41A4-93EC-B4C28207C5AD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B40BE7D8-3802-41A4-93EC-B4C28207C5AD}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{B40BE7D8-3802-41A4-93EC-B4C28207C5AD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B40BE7D8-3802-41A4-93EC-B4C28207C5AD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B40BE7D8-3802-41A4-93EC-B4C28207C5AD}.Release|Any CPU.Deploy.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C8E4E425-8FEC-4A87-A237-CC8903D1CB5C}
+	EndGlobalSection
+EndGlobal
