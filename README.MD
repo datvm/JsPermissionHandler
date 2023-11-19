@@ -8,10 +8,10 @@ This package does not support Tizen.
 
 # Installation
 
-Install the [NuGet package](https://www.nuget.org/packages/JsPermissionHandlers) in your project:
+Install the [NuGet package](https://www.nuget.org/packages/JsPermissionHandler) in your project:
 
 ```ps
-dotnet add package JsPermissionHandlers
+dotnet add package JsPermissionHandler
 ```
 
 # Setup Permissions
